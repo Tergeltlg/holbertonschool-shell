@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -la --/curr/parent/boot/
+ls -lan /boot
