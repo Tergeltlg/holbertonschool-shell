@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod +x change_owner_if_guillaume.sh
+[ "$(stat -c %U hello 2>/dev/null || stat -f %Su hello 2>/dev/null)" = "guillaume" ] && chown vincent hello
